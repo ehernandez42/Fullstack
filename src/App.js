@@ -1,4 +1,4 @@
-
+/*
 const Header = (header) => {
   console.log(header)
   return(<h1>{header.name}</h1>)
@@ -58,6 +58,35 @@ const App = () => {
       <Total parts={course.parts} />
         </div>
         )
+}*/
+
+import { useState} from "react";
+
+const Display = ({ counter }) => <div>{counter}</div>
+
+const Button = ({ handleClick, text }) => <button onClick={handleClick}>{text}
+</button>
+
+const App = () =>{
+    const [counter, setCounter] = useState(0)
+
+    const oneClick = () => setCounter(counter + 1)
+    const zeroReset = () => setCounter(0)
+    const negativeClick = () => setCounter(counter - 1)
+
+
+    console.log("rendering, " + counter)
+    return (
+        <div>
+        <Display counter={counter}/>
+        <Button handleClick={oneClick}
+        text="Plus" />
+        <Button handleClick={negativeClick}
+        text="Minus" />
+        <Button handleClick={zeroReset}
+        text="Zero babayyy" />
+        </div>
+    )
 }
 
 export default App;
