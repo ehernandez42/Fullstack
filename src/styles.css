@@ -1,0 +1,18 @@
+
+* {
+    font-family: Helvetica, Arial, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkslategrey;
+}
+
+button {
+    font-family: "Helvetica";
+    color: rebeccapurple;
+    height: 50px;
+    width: 90px;
+    font-size: large;
+    background: royalblue;
+}
