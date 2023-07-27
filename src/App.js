@@ -17,7 +17,7 @@ const App = () =>{
         <div>
         <Display counter={counter}/>
         <Button handleClick={oneClick}
-        text="Plus" onClick={handleSubmit} />
+        text="Plus" />
         <Button handleClick={negativeClick}
         text="Minus" />
         <Button handleClick={zeroReset}
